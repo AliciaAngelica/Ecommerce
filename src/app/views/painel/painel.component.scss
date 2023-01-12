@@ -1,0 +1,96 @@
+.cardHeader{
+  position: relative;
+  left: 20%;
+  box-shadow: none;
+  width: 60%;
+  height: 90px;
+  margin-bottom: 2%;
+  border-radius: 10px;
+}
+
+.divBusca{
+  background-color:#e7e7e7;
+  border-radius: 5px;
+  width: 370px;
+  height: 45px;
+  position: relative;
+  left: 2%;
+
+}
+
+.txtBusca{
+  float: left;
+  background-color: transparent;
+  padding: 8px;
+  font-size: 12px;
+  border: none;
+  height: 30px;
+  width: 285px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.btnBusca{
+  border: none;
+  float: left;
+  left: 30px;
+  font-size: 10px;
+  padding: 22px 45px;
+  height: 40px;
+  border-radius: 5px;
+  width: 80px;
+  font-weight: 600;
+  background-color: rgb(255, 73, 73);
+}
+
+.icon {
+  padding: 10px;
+  float: left;
+}
+
+input:focus, select:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+table {
+  width: 50%;
+  box-shadow: none;
+  border-radius: 10px;
+  padding: 50px;
+}
+
+td {
+  border: none;
+}
+
+.container-painel {
+  padding: 0% 20% 0% 20%;
+
+}
+
+.cadastrar {
+  font-size: 12px;
+  padding: 20px;
+  background-color: rgb(253, 62, 62);
+  top: 20px;
+  position: relative;
+  left: 80%;
+  border-radius: 5px;
+
+
+}
+
+a:link {
+  text-decoration: none;
+
+ }
+
+ a:visited {
+    color: rgb(253, 62, 62);
+ }

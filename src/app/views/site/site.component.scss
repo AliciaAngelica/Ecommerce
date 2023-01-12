@@ -1,0 +1,47 @@
+.card {
+  position: relative;
+  left: 5%;
+  height: 90%;
+  width: 300px;
+  background-color: rgb(236, 236, 236);
+  box-shadow: none;
+}
+
+.cardProduto {
+  text-align: center;
+  width: 95%;
+}
+
+.avaliation, .description {
+  left: 10px;
+  top: 15px;
+
+}
+
+.prices {
+  top: -25px;
+}
+
+.price {
+  font-size: 15px;
+  font-weight: 500;
+  padding-left: 35%;
+  color: black;
+}
+
+.promotionPrice p {
+  font-size: 13px;
+  color: grey;
+  text-decoration: line-through;
+  padding-right: 40%;
+
+}
+
+a:link {
+  text-decoration: none;
+
+ }
+
+ a:visited {
+    color: rgb(143, 143, 143);
+ }

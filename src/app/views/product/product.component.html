@@ -1,0 +1,39 @@
+<mat-grid-list cols="2" class="cardProduct">
+    <mat-grid-tile>
+      <mat-card class="imgProduct">
+        <img mat-card-image src="" alt="produto">
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-card class="descriptionProduct">
+        <p class="productName">NOME PRODUTO</p>
+        <mat-grid-list cols="2" class="prices">
+          <mat-grid-tile class="price"><p>R$13,90</p></mat-grid-tile>
+          <mat-grid-tile class="promotionPrice"><p>R$13,90</p></mat-grid-tile>
+      </mat-grid-list>
+      <mat-card-content>
+        <p class="details">Detalhes:</p>
+        <mat-divider></mat-divider>
+        <p class="description">The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.</p>
+      </mat-card-content>
+      <mat-grid-list cols="2">
+        <mat-grid-tile>
+          <div class="amount">
+          <div class="col-md-12 col- mt-5">
+              <button (click)="somar()" class="buttonSomar">
+                <mat-icon>add_circle_outline</mat-icon>
+              </button>
+              <span> {{ numero }} </span>
+              <button (click)="subtrair()" class="buttonSubtrair">
+                <mat-icon>remove_circle_outline</mat-icon>
+              </button>
+          </div>
+        </div>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <button mat-button class="cadastrar">ADICIONAR AO CARRINHO</button>
+        </mat-grid-tile>
+    </mat-grid-list>
+    </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>

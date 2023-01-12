@@ -1,0 +1,56 @@
+
+<mat-toolbar class="cardHeader">
+  <div class="divBusca">
+    <mat-icon class="icon">search</mat-icon>
+    <input type="text" class="txtBusca" placeholder="Digite o nome do produto"/>
+  </div>
+  <button mat-button class="btnBusca">BUSCAR</button>
+  <span class="spacer"></span>
+  <button mat-button class="loja"><a routerLink="/site">VER LOJA</a></button>
+</mat-toolbar>
+
+<div class="container-painel">
+
+  <table mat-table #table [dataSource]="dataSource" class="mat-elevation-z8">
+
+    <ng-container matColumnDef="productName">
+      <th mat-header-cell *matHeaderCellDef> Nome do Produto</th>
+      <td mat-cell *matCellDef="let element"> {{element.price}} {{element.productName}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="price">
+      <th mat-header-cell *matHeaderCellDef> Preço </th>
+      <td mat-cell *matCellDef="let element"> {{element.price}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="promotionPrice">
+      <th mat-header-cell *matHeaderCellDef> Preço Promoção </th>
+      <td mat-cell *matCellDef="let element"> {{element.promotionPrice}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="stock">
+      <th mat-header-cell *matHeaderCellDef> Estoque </th>
+      <td mat-cell *matCellDef="let element"> {{element.stock}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="visible">
+      <th mat-header-cell *matHeaderCellDef> Visível </th>
+      <td mat-cell *matCellDef="let element"></td>
+    </ng-container>
+
+    <ng-container matColumnDef="action">
+      <th mat-header-cell *matHeaderCellDef> Ações </th>
+      <td mat-cell *matCellDef="let element">
+        <button mat-icon-button color="warn"><mat-icon>edit</mat-icon></button>
+        <button mat-icon-button color="warn"><mat-icon>delete_forever</mat-icon></button>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+
+    <button mat-button (click)="openNewProduct(null)" class="cadastrar">CADASTRAR NOVO PRODUTO</button>
+
+
+  </div>
